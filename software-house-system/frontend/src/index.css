@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-canvas text-ink font-body antialiased;
+}
+
+/* Monospace status/ID chips give the app its "build ledger" signature look */
+.status-chip {
+  @apply font-mono text-[11px] uppercase tracking-wider px-2 py-1 rounded;
+}
+
+::selection {
+  background: #2F6FED33;
+}
+
+:focus-visible {
+  outline: 2px solid #2F6FED;
+  outline-offset: 2px;
+}
